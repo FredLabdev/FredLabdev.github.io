@@ -1,0 +1,278 @@
+/*******************************************************************************/
+
+
+/*******************************************************************************/
+
+body {
+    font-family: 'Spartan', sans-serif;
+    min-width: 1440px; }
+
+@media (max-width: 767px) {
+    body {
+        min-width: 375px; } }
+
+p {
+    color: hsl(0, 0%, 63%);
+    font-size: 12px;
+    line-height: 1.8em;
+    font-weight: 300;
+    margin: 20px 0; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Spartan', sans-serif;
+    color: hsl(0, 0%, 0%);
+    font-weight: 700; }
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease; }
+  
+a, a:hover {
+    text-decoration: none !important; }
+
+.content {
+    padding: 0rem 0; }
+
+h2 {
+    font-size: 40px; }
+
+h4 {
+    font-size: 14px;
+    letter-spacing: 0.5em;
+}
+
+.bg-dark { 
+    background-color: hsl(0, 0%, 0%)!important;
+    opacity: 1; }
+
+.bg-dark:hover, .bg-dark:focus { 
+    background-color: hsl(0, 0%, 63%)!important; }
+
+/* Navbar */
+/*******************************************************************************/
+
+.navbar { 
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+    color: hsl(0, 0%, 100%); }
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem; }
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent !important; }
+
+.nav>li>a:hover:before {
+    display:block;
+    clear:both;
+    content : "";
+    position: absolute;
+    left    : 35%;
+    bottom  : 0px;
+    max-width:250px;
+    height  : 1px;
+    width   : 25px;
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+    margin:0 auto;
+    padding:4px 0px;
+}
+
+@media (max-width: 767px) {
+    .navbar-header {
+        position: relative;
+        top: -50px; } }
+
+/* Slider */
+/*******************************************************************************/
+
+@media (min-width: 767px) {
+    .w-70{
+        width: 70% !important; 
+        min-height: 534px;
+        height: auto !important; } 
+    .w-60{
+        width: 60% !important; 
+        min-height: 534px;
+        height: auto !important; } 
+    .w-40 {
+        width: 40% !important; }
+    .w-30 {
+        width: 30% !important; }
+    .about-light img {
+        visibility: hidden;
+    }
+    .about-light {
+        background-image: url(../images/image-about-light.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .w-10 {
+        width: 10% !important; }
+    .h-15 {
+        height: 15% !important; } }
+
+@media (max-width: 767px) {
+    .hero-1 {
+        content:url("../images/mobile-image-hero-1.jpg"); }
+    .hero-2 {
+        content:url("../images/mobile-image-hero-2.jpg"); }
+    .hero-3 {
+        content:url("../images/mobile-image-hero-3.jpg"); }
+    .w-10 {
+        width: 30% !important; }
+    .h-15 {
+        height: 50px !important; } }
+    
+.text {
+    display: flex;
+    align-items: center;
+    padding: 4rem 4rem; }
+
+figcaption {
+    padding: 0 5%;
+    font-size: 18px; }
+
+@media (max-width: 767px) {
+    .text figcaption {
+        padding: 0 0%; }
+    .cta-shop, h4 {
+        font-size: 12px !important; } }
+
+@media (min-width: 767px) {
+    .text-slider figcaption {
+        min-width: 650px; } }
+
+.cta-shop {
+    display: flex;
+    height : 50px;  
+    text-align: left;
+    padding-left: 0; }
+
+.arrow path {
+    stroke: black;
+    fill: none; }
+
+.cta-shop {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1em;
+    color: hsl(0, 0%, 27%); 
+    position: relative;
+    bottom: -15px;
+    padding-right: 30px;
+    display: block; }
+
+button {
+    border: none;
+    background: none; }
+
+button:focus {
+    outline: none; }
+
+.cta-shop:hover {
+    color: hsl(0, 0%, 63%); }
+
+.cta-shop:hover > svg > .arrow path {
+    stroke: hsl(0, 0%, 63%); }
+
+@media (max-width: 767px) {
+    .cta-shop {
+        padding-right: 0px; } }
+
+.carousel-control-block {
+    position: absolute; }
+
+@media (min-width: 767px) {
+    .carousel-control-block {
+        bottom: 0;
+        left: 60%; } }
+
+@media (max-width: 767px) {
+    .image, .text {
+        width: 100%;
+        display: block !important; }
+
+    .text-slider  {
+        min-height: 560px; } 
+
+    .slide-one-item .owl-nav {
+        display: none; } 
+
+    .carousel-control-block {
+        bottom: 0;
+        right: 0; } }  
+
+/* Shop  - About - Contact */
+/*******************************************************************************/
+@media (min-width: 767px) {
+    .header img {
+        height: 700px;
+        width: 100%;
+        visibility: hidden; }
+    .header {
+        background-repeat: no-repeat;
+        background-size: cover; }
+    .header.hero-1 {
+        background-image: url(../images/desktop-image-hero-1.jpg); }
+    .header.hero-2 {
+        background-image: url(../images/desktop-image-hero-2.jpg); }
+    .header.hero-3 {
+        background-image: url(../images/desktop-image-hero-3.jpg); }    
+    .shop-slider {
+        height: 600px; } }
+
+.shop-slider > div:nth-child(1) {
+    background-color: hsl(0, 0%, 63%); }
+
+.shop-slider > div > .mb-5 {
+    width: 430px;
+    margin: auto;
+    padding: 50px 30px; }
+    
+/* About - Video */
+/*******************************************************************************/
+
+.video-responsive { overflow:hidden; padding-bottom:56.25%; position:relative; height:0;}
+
+.video-responsive iframe { left:0; top:0; height:100%; width:100%; position:absolute;}
+
+/* Contact - Form */
+/*******************************************************************************/
+
+.contact {
+    background: hsl(0, 0%, 63%);
+    padding: 30px;
+    padding-top: 150px; }
+
+label {
+    color: hsl(0, 0%, 27%);
+}
+
+.submit {
+    background-color: hsl(0, 0%, 0%)!important;
+    color: hsl(0, 0%, 100%);
+    opacity: 1;
+    display: block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+
+@media (max-width: 767px) {
+    .submit {
+        position: absolute;
+        top: -560px; } }
+
+/* Footer */
+/*******************************************************************************/
+
+.attribution {
+    height: 50px;
+    background: hsl(0, 0%, 0%);
+    color:hsl(0, 0%, 63%);
+}
